@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inflow.name %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @inflow.value %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @inflow.start_time %>
+</p>
+
+<%= link_to 'Edit', edit_inflow_path(@inflow) %> |
+<%= link_to 'Back', inflows_path %>

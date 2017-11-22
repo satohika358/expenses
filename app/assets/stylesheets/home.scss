@@ -1,0 +1,104 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	text-align: center;
+}
+
+.monthhead {
+	text-align: center;
+}
+.prevhead {
+	text-align: right;
+}
+.nexthead {
+	text-align: left;
+}
+
+.daycells {
+	text-align: center;
+}
+.datecells {
+	text-align: right;
+}
+
+.balance {
+  /*margin: 30px;*/
+  font-family: Verdana;
+  font-size: 15px;
+}
+
+.calendar-heading {
+
+  .glyphicon {
+    font-size: 50px;
+    color: blue;
+  }
+
+  .glyphicon-plus {
+    color: yellow;
+  }
+
+  a:hover {
+    background-color: transparent !important;
+  }
+
+}
+
+.expense {
+  text-align: left;
+}
+
+.simple-calendar {
+  margin: 0px 30px;
+  width: 1200px !important;
+
+  .day {
+    height: 100px !important;
+    font-family: Verdana !important;
+    font-size: 15px !important;
+    text-align: right;
+  }
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .past {}
+  .future {}
+
+  .start-date {}
+
+  .prev-month {
+    .click {
+    display: none;
+    }
+  }
+
+  .next-month {
+    .click {
+      display: none;
+    }
+  }
+
+  .current-month {
+  	color: blue;
+  	background-color: rgba(255, 255, 0, 0.35);
+    .click {
+      color: yellow;
+      text-align: left;
+    }
+  }
+
+  .today {
+  	background-color: rgba(0, 35, 105, 0.75) !important;
+  	color: yellow;
+  }
+
+  .has-events {}
+}

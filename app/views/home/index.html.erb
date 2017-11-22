@@ -1,0 +1,24 @@
+<div id="header">
+	<h1>Rails is lyf</h1>
+</div>
+
+<div class="simple-calendar">
+  <%= month_calendar events: @expenses do |date, expenses| %>
+    <h6> <%= date.day %> </h6>
+
+    <% expenses.each do |expense| %>
+      <div><p class="expense">
+        <%= expense.name %>:
+        <span>
+          <% if expense.flow == "Expense" %>
+            -<%= expense.value %>
+          <% else %>
+            +<%= expense.value %>
+          <% end %>
+        </span>
+      </p></div>
+    <% end %>
+  <% end %>
+</div>
+
+<%= render "layouts/modal" %>
