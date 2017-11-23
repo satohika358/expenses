@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'expenses/new'
   get 'expenses/index'
+  get 'home/show'
 
   # get 'home/index'
  

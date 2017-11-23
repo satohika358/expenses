@@ -7,6 +7,13 @@ class HomeController < ApplicationController
     @balance = find_balance
   end
 
+  
+  def show
+        format.html # show.html.erb
+        format.js # show.js.erb
+        format.json { render json: @expense }
+  end
+
   private
 
     def set_beginning_of_week
