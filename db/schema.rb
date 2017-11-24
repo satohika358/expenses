@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20171122155503) do
   create_table "expenses", force: :cascade do |t|
     t.string   "name"
     t.decimal  "value"
-    t.string   "flow"
     t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "flow"
   end
 
 end

@@ -3,10 +3,10 @@
 </div>
 
 <div class="simple-calendar">
-  <%= month_calendar events: @expenses do |date, expenses| %>
-    <h4> <%= date.day %> </h4>
+  <%= month_calendar events: @expenses do |date, expenses| %>    
     <div class="click">
-      <%#= link_to '<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button>'.html_safe, expenses, remote: true %>
+      <!-- <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;<%= date.day %></button> -->
+      <%= link_to ('<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;'+date.day.to_s+'</button>').html_safe, :action => :show, remote: true %>
     </div>
 
     <% expenses.each do |expense| %>
