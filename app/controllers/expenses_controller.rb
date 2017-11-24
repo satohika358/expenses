@@ -10,9 +10,12 @@ class ExpensesController < ApplicationController
   # GET /expenses/1
   # GET /expenses/1.json
   def show
+    @expenses = Expense.all
+    respond_to do |format|
         format.html # show.html.erb
         format.js # show.js.erb
-        format.json { render json: @expense }
+        format.json { render json: @expenses }
+    end
   end
 
   # GET /expenses/new

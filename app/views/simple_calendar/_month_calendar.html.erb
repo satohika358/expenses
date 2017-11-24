@@ -42,9 +42,6 @@
                 <% else %>
                   <% block.call day, sorted_events.fetch(day, []) %>
                 <% end %>
-                <div class="click">
-                  <%= link_to '<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button>'.html_safe, book, remote: true %>
-                </div>
                 </div>
               <% end %>
             <% end %>

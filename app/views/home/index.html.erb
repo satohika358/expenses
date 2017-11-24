@@ -4,7 +4,10 @@
 
 <div class="simple-calendar">
   <%= month_calendar events: @expenses do |date, expenses| %>
-    <h6> <%= date.day %> </h6>
+    <h4> <%= date.day %> </h4>
+    <div class="click">
+      <%#= link_to '<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span></button>'.html_safe, expenses, remote: true %>
+    </div>
 
     <% expenses.each do |expense| %>
       <div><p class="expense">
