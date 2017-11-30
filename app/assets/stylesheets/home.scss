@@ -28,9 +28,18 @@ h4 {
   height: 500px;
 }
 
-.modal-body {
-  max-height: 350px;
+.exp-div {
+  max-height: 300px;
   overflow: auto;
+}
+
+select.date-select {
+  width: 25%;
+  display: inline-block;
+}
+
+input.form-control{
+  width: 80%;
 }
 
 .daycells {

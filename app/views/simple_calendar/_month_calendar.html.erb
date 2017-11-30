@@ -1,7 +1,7 @@
 <div class="simple-calendar">
   <div class="calendar-heading">
     <table><tr>
-    <td><center><button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span><h5>New Entry</h5></button></center></td>
+    <td><center><%= link_to '<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span><h5>New Entry</h5></button>'.html_safe, new_expense_path %></center></td>
     <td><div class="prevhead"><h4><%= link_to '<span class="glyphicon glyphicon-circle-arrow-left"></span>'.html_safe, calendar.url_for_previous_view %></h4>
     </div></td>
     <td><div class="monthhead"><span class="calendar-title"><h3><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></h3></span></div></td>
