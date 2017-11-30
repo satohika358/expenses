@@ -1,0 +1,39 @@
+LOG:  database system was shut down at 2017-12-01 00:40:54 +08
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+LOG:  database system was interrupted; last known up at 2017-12-01 00:42:58 +08
+LOG:  database system was not properly shut down; automatic recovery in progress
+LOG:  invalid record length at 0/14EC180: wanted 24, got 0
+LOG:  redo is not required
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+ERROR:  new encoding (UTF8) is incompatible with the encoding of the template database (WIN1252)
+HINT:  Use the same encoding as in the template database, or use template0 as template.
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8'
+ERROR:  database "db/development_database" already exists
+STATEMENT:  CREATE DATABASE "db/development_database" ENCODING = 'utf8' TEMPLATE = "template0"
+LOG:  received fast shutdown request
+LOG:  aborting any active transactions
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+ERROR:  canceling statement due to user request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down

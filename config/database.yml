@@ -8,6 +8,8 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
+  encode: utf8
+  template: template0
   database: db/development_database
 
 development:
