@@ -20,6 +20,19 @@ h4 {
 	text-align: left;
 }
 
+.modal {
+  background-color: white;
+  width: 500px;
+  border-radius: 15px;
+  margin: auto;
+  max-height: 500px;
+}
+
+.modal-body {
+  max-height: 300px;
+  overflow: auto;
+}
+
 .daycells {
 	text-align: center;
 }

@@ -6,7 +6,7 @@
   <%= month_calendar events: @expenses do |date, expenses| %>    
     <div class="click">
       <!-- <button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;<%= date.day %></button> -->
-      <%= link_to ('<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;'+date.day.to_s+'</button>').html_safe, :action => :show, remote: true %>
+      <%= link_to ('<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;'+date.day.to_s+'</button>').html_safe, show_path(selected_date: date), remote: true %>
     </div>
 
     <% expenses.each do |expense| %>

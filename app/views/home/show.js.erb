@@ -2,5 +2,5 @@ $modal = $('.modal'),
 $modalBody = $('.modal .modal-body'),
 $modalHeading = $('.modal .modal-heading');
 $modalHeading.html("Expenses");
-$modalBody.html("<%= escape_javascript(render @expenses) %>");
+$modalBody.html("<%= escape_javascript(render 'events') %>");
 $modal.modal();

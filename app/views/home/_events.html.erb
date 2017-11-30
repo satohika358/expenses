@@ -2,10 +2,15 @@
 
 	<% if expense.start_time == @date %>
 		<label>Info:</label> <%= expense.name %>
+		<br>
 		<label>Type:</label> <%= expense.flow %>
+		<br>
 		<label>Value:</label> <%= expense.value %>
-		<%= link_to 'Edit', edit_expense_path(expense) %>
-		<%= link_to 'Remove', expense, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<br>
+		<%= link_to '<span>Edit</span>'.html_safe, edit_expense_path(expense) %>
+		&nbsp;
+		<%= link_to '<span>Remove</span>'.html_safe, expense, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<br><br>
 	<% end %>
 
 <% end %>

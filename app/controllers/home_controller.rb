@@ -9,11 +9,13 @@ class HomeController < ApplicationController
 
   def show
     @expenses = Expense.all
+    @date = params[:selected_date]
     respond_to do |format|
         format.html # show.html.erb
         format.js # show.js.erb
         format.json { render json: @expenses }
     end
+  end
   
   # def show
   #       format.html # show.html.erb
