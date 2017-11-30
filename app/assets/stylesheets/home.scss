@@ -25,11 +25,11 @@ h4 {
   width: 500px;
   border-radius: 15px;
   margin: auto;
-  max-height: 500px;
+  height: 500px;
 }
 
 .modal-body {
-  max-height: 300px;
+  max-height: 350px;
   overflow: auto;
 }
 
@@ -69,7 +69,7 @@ h4 {
 }
 
 .simple-calendar {
-  margin: 0px 30px;
+  margin: 0px 30px 30px 30px;
   width: 1200px !important;
 
   .day {

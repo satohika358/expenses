@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :expenses
-  get 'index' => 'home#index'
+  get 'index' => 'home#index', as: "home"
   get 'new' => 'expense#new'
   get 'expenses/index'
   get 'show/:selected_date', to: 'home#show', as: 'show'

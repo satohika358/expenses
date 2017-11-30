@@ -1,5 +1,7 @@
-<h1>New Expense</h1>
+<div class="container">
+	<h1>New Entry: <%= params[:selected_date] %></h1>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<%= link_to 'Back', expenses_path %>
+	<%= link_to 'Back', home_path %>
+</div>

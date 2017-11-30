@@ -1,6 +1,6 @@
 $modal = $('.modal'),
 $modalBody = $('.modal .modal-body'),
 $modalHeading = $('.modal .modal-heading');
-$modalHeading.html("Expenses");
+$modalHeading.html("<%= escape_javascript(@date) %>");
 $modalBody.html("<%= escape_javascript(render 'events') %>");
 $modal.modal();

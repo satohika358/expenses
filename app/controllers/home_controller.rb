@@ -16,12 +16,6 @@ class HomeController < ApplicationController
         format.json { render json: @expenses }
     end
   end
-  
-  # def show
-  #       format.html # show.html.erb
-  #       format.js # show.js.erb
-  #       format.json { render json: @expense }
-  # end
 
   private
 
